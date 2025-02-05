@@ -59,6 +59,7 @@ checks:
       uploader-count: 2
       downloader-count: 0
       max-use-batch: 1h
+      metrics-enabled: true
       upload-groups:
         - bee-1
         - bee-2
@@ -72,6 +73,7 @@ checks:
       content-size: 5000000
       postage-amount: 1000000000 # 1024/15*60*60*24*7
       postage-depth: 24
+      metrics-enabled: true
     timeout: 720h
     type: smoke
   testnet-erasure-code:
@@ -79,5 +81,6 @@ checks:
       content-size: 5000000
       postage-amount: 1000000000 # 1024/15*60*60*24*7
       postage-depth: 24
+      metrics-enabled: true
     timeout: 720h
     type: erasure-code
